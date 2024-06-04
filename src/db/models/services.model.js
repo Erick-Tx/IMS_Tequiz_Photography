@@ -41,5 +41,9 @@ const ServiceSchema = {
         field: 'price'
     }
 }
+Service.associate = models =>{
+    Service.hasMany(models.Session);
+        
+}
   
 module.exports = { Service, ServiceSchema };

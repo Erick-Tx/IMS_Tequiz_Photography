@@ -5,12 +5,12 @@ class RentalsService {
     constructor() {}
 
     async find() {
-      const res = await models.Rental.findAll();
+      const res = await models.Rental.findAll({include:[{model: models.Product }, {model: models.Client }]});
       return res;
     }
 
     async findOne(id) {
-      const res = await models.Rental.findByPk(id);
+      const res = await models.Rental.findByPk(id, {include:[{model: models.Product }, {model: models.Client }]});
       return res;
     }
 

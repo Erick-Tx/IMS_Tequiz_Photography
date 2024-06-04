@@ -43,5 +43,8 @@ const ProductSchema = {
         field: 'price'
     }
 }
-  
+Product.associate = models =>{
+    Product.hasMany(models.Rental);
+        
+}
 module.exports = { Product, ProductSchema };

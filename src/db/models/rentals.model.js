@@ -44,5 +44,10 @@ const RentalSchema = {
     },
     
 }
+Rental.associate = models => {
+    Rental.belongsTo(models.Client);
+    Rental.belongsTo(models.Product);
+} 
+
   
 module.exports = { Rental, RentalSchema };

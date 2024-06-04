@@ -44,7 +44,14 @@ const ClientSchema = {
         allowNull: true,
         type: DataTypes.INTEGER,
         field: 'phone'
-    }
+    },
+    
+}
+Client.associate = models =>{
+    Client.hasMany(models.Session);
+    Client.hasMany(models.Rental);
+    
+        
 }
   
 module.exports = { Client, ClientSchema };

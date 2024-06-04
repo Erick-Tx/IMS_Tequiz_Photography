@@ -5,12 +5,12 @@ class PhotographersService {
     constructor() {}
 
     async find() {
-      const res = await models.Photographer.findAll();
+      const res = await models.Photographer.findAll({include:[{model: models.Session}]});
       return res;
     }
 
     async findOne(id) {
-      const res = await models.Photographer.findByPk(id);
+      const res = await models.Photographer.findByPk(id, {include:[{model: models.Session}]});
       return res;
     }
 

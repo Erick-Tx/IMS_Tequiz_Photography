@@ -56,5 +56,9 @@ const PhotographerSchema = {
         field: 'availability'
     }
 }
+Photographer.associate = models =>{
+    Photographer.hasMany(models.Session);
+        
+}
   
 module.exports = { Photographer, PhotographerSchema };

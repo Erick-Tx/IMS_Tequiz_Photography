@@ -46,5 +46,10 @@ const EquipmentSchema = {
         field: 'availability'
     }
 }
+Equipment.associate = models =>{
+    Equipment.hasOne(models.Session);
+    
+        
+}
   
 module.exports = { Equipment, EquipmentSchema };
