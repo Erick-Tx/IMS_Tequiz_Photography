@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Registro Portafolio</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/icono.png" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,700,800%7CIBM+Plex+Sans:200,300,400,400i,600,700">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+
+<section class="vh-100%" style="background-color: #508bfc;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 ">
+  
+              <h3 class="mb-5 text-center" >Registrar Portafolio</h3>
+              <form id="dataForm">  
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label for="portfolioItemID">Id</label>
+                <input type="text" id="portfolioItemID" name="portfolioItemID" class="form-control form-control-lg" required />
+                <label class="form-label" for="portfolioItemID"></label>
+              </div>
+
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label for="title">Título</label>
+                <input type="text" id="title" name="title" class="form-control form-control-lg" required />
+                <label class="form-label" for="title"></label>
+              </div>
+
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label for="description">Descripción</label>
+                <input type="text" id="description" name="description" class="form-control form-control-lg" required />
+                <label class="form-label" for="description"></label>
+              </div>
+
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label for="tag">Tag</label>
+                <input type="text" id="tag" name="tag" class="form-control form-control-lg" required />
+                <label class="form-label" for="tag"></label>
+              </div>
+
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label for="SessionSessionID">Sesión ID</label>
+                <input type="text" id="SessionSessionID" name="SessionSessionID" class="form-control form-control-lg" required />
+                <label class="form-label" for="SessionSessionID"></label>
+              </div>
+
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label for="mainImage">Foto principal</label>
+                <input type="url" id="mainImage" name="mainImage" class="form-control form-control-lg" required />
+                <label class="form-label" for="mainImage"></label>
+              </div>
+
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label for="additionalImages">Fotos</label>
+                <input type="url" id="additionalImages" name="additionalImages" class="form-control form-control-lg" required />
+                <label class="form-label" for="additionalImages"></label>
+              </div>
+              
+
+  
+            
+
+  
+              <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" type="submit">Registrar</button>
+  
+            </form>
+  
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    const form = document.getElementById('dataForm');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevenir el envío del formulario
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+
+        fetch('http://localhost:3000/api/v1/portfolios', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Registrado correctamente');
+                location.reload(); // Recargar la página
+            } else {
+                return response.text().then(text => {
+                    alert(`Error al enviar los datos: ${text}`);
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error al enviar los datos:', error);
+        });
+    });
+</script>
+  </body>
+</html>
