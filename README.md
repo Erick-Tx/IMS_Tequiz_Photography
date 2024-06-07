@@ -57,35 +57,47 @@ IMS_Tequiz_Photography is a comprehensive web application designed for the effic
 
 
 
+# Project Report
 
-Project Report
-Design Choices
-Unified System: The application replaces fragmented tools with a unified system to manage reservations, portfolios, inventory, and rentals.
-PHP and Smarty: Chosen for their flexibility and ease of integration, PHP handles the backend logic while Smarty facilitates the separation of business logic from presentation.
-MySQL Database: Used for its robustness and ability to handle complex queries efficiently.
-Implementation Details
-Entities and Relationships
-Client: ClientID, Name, Email, Phone, Address
-Session: SessionID, Date, StartTime, EndTime, Type, Place, Price, ClientID, ServiceID, PhotographerID, EquipmentID
-PortfolioItem: PortfolioItemID, Title, Description, SessionID, Tags
-Photographer: PhotographerID, Name, Speciality, Email, Phone, Availability
-Equipment: EquipmentID, Type, Brand, Model, Condition, Availability
-Product: ProductID, Name, Type, Description, Price
-Service: ServiceID, Name, Type, Description, Price
-AttireRental: AttireRentalID, Type, RentalDate, ReturnDate, Price, ClientID, ProductID
-Database Schema
+## Design Choices
+
+- **Unified System:** The application replaces fragmented tools with a unified system to manage reservations, portfolios, inventory, and rentals.
+- **PHP and Smarty:** Chosen for their flexibility and ease of integration, PHP handles the backend logic while Smarty facilitates the separation of business logic from presentation.
+- **MySQL Database:** Used for its robustness and ability to handle complex queries efficiently.
+
+## Implementation Details
+
+### Entities and Relationships
+
+- **Client:** ClientID, Name, Email, Phone, Address
+- **Session:** SessionID, Date, StartTime, EndTime, Type, Place, Price, ClientID, ServiceID, PhotographerID, EquipmentID
+- **PortfolioItem:** PortfolioItemID, Title, Description, SessionID, Tags
+- **Photographer:** PhotographerID, Name, Speciality, Email, Phone, Availability
+- **Equipment:** EquipmentID, Type, Brand, Model, Condition, Availability
+- **Product:** ProductID, Name, Type, Description, Price
+- **Service:** ServiceID, Name, Type, Description, Price
+- **AttireRental:** AttireRentalID, Type, RentalDate, ReturnDate, Price, ClientID, ProductID
+
+### Database Schema
+
 Detailed schema with primary and foreign keys, constraints, and data types to ensure data integrity.
 
-Challenges Faced
-Secure File Uploads: Implementing measures to prevent malicious files.
-Cross-Browser Compatibility: Ensuring consistent user experience across different browsers.
-Performance Optimization: Managing large volumes of images without compromising performance.
-Future Improvements
-User Roles and Permissions: Implementing finer access control for different user roles.
-Advanced Image Processing: Integrating libraries for automatic resizing and thumbnail generation.
-Enhanced UI/UX: Utilizing modern JavaScript frameworks for a more responsive and interactive interface.
-Contributing
+## Challenges Faced
+
+- **Secure File Uploads:** Implementing measures to prevent malicious files.
+- **Cross-Browser Compatibility:** Ensuring consistent user experience across different browsers.
+- **Performance Optimization:** Managing large volumes of images without compromising performance.
+
+## Future Improvements
+
+- **User Roles and Permissions:** Implementing finer access control for different user roles.
+- **Advanced Image Processing:** Integrating libraries for automatic resizing and thumbnail generation.
+- **Enhanced UI/UX:** Utilizing modern JavaScript frameworks for a more responsive and interactive interface.
+
+## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-License
+## License
+
 This project is licensed under the MIT License. For more details, visit the repository.
