@@ -3,6 +3,18 @@
 ## Overview
 IMS_Tequiz_Photography is a comprehensive web application designed for the efficient management of a photography studio. The system aims to unify various operations including reservations, digital portfolio management, inventory tracking, and attire rentals to streamline processes and enhance customer service.
 
+### Home Page
+![image](https://github.com/Erick-Tx/IMS_Tequiz_Photography/assets/68562988/1a961332-c98d-4e11-b4bf-ff0ba60e089c)
+
+### Services Page
+![image](https://github.com/Erick-Tx/IMS_Tequiz_Photography/assets/68562988/63dbf053-fe26-448f-964b-762e701ff1ee)
+
+### Products Page
+![image](https://github.com/Erick-Tx/IMS_Tequiz_Photography/assets/68562988/494c324e-9763-4b1f-85fd-6e8698e3f0eb)
+
+
+
+
 ## Features
 - **User Authentication**: Secure login and session management.
 - **Photo Uploads**: Easy photo upload and management.
