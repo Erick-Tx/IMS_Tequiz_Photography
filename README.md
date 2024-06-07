@@ -34,3 +34,12 @@ IMS_Tequiz_Photography is a comprehensive web application designed for the effic
   npm install
 ```
 4. Create a .env file based on the .env.example and configure your environment variables.
+5. Start the application backend:
+  ```bash
+  npm run dev
+```
+5. Start the application frontend:
+  ```bash
+  cd Frontend
+ ```
+6. Open the index.html file.
