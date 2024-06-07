@@ -62,8 +62,8 @@ IMS_Tequiz_Photography is a comprehensive web application designed for the effic
 ## Design Choices
 
 - **Unified System:** The application replaces fragmented tools with a unified system to manage reservations, portfolios, inventory, and rentals.
-- **PHP and Smarty:** Chosen for their flexibility and ease of integration, PHP handles the backend logic while Smarty facilitates the separation of business logic from presentation.
-- **MySQL Database:** Used for its robustness and ability to handle complex queries efficiently.
+- **NodeJS:** Chosen for their flexibility and ease of integration, PHP handles the backend logic while Smarty facilitates the separation of business logic from presentation.
+- **PosgreSQL Database:** Used for its robustness and ability to handle complex queries efficiently.
 
 ## Implementation Details
 
