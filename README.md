@@ -14,10 +14,9 @@ IMS_Tequiz_Photography is a comprehensive web application designed for the effic
 - **Attire Rental Management**: Handle attire rentals including scheduling and payments.
 
 ## Technologies Used
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: PHP
-- **Templating Engine**: Smarty
-- **Database**: MySQL
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap
+- **Backend**: NodeJS (JavaScript)
+- **Database**: postgreSQL
 
 ## Installation
 1. Clone the repository:
