@@ -23,3 +23,14 @@ IMS_Tequiz_Photography is a comprehensive web application designed for the effic
 1. Clone the repository:
   ```bash
   git clone https://github.com/Erick-Tx/IMS_Tequiz_Photography.git
+```
+
+2. Navigate to the project directory:
+  ```bash
+  cd IMS_Tequiz_Photography
+```
+3. Install dependencies:
+  ```bash
+  npm install
+```
+4. Create a .env file based on the .env.example and configure your environment variables.
