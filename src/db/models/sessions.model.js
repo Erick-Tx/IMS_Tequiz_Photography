@@ -22,18 +22,8 @@ const SessionSchema = {
     },
     date: {
         allowNull: false,
-        type: DataTypes.DATE,
+        type: DataTypes.DATEONLY,
         field:'date'
-    },
-    startTime: {
-        allowNull: false,
-        type: DataTypes.DATE,
-        field:'startTime'
-    },
-    endTime: {
-        allowNull: false,
-        type: DataTypes.DATE,
-        field:'endTime'
     },
     type:{
         allowNull: true,

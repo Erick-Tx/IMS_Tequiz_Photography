@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
         data.forEach((item, index) => {
           const portfolioItem = `
             <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
-              <article class="thumbnail-corporate wow slideInDown">
+              <article class="thumbnail-corporate wow slideInDown" style="margin-top: 25px;">
                 <img class="thumbnail-corporate-image" src="${item.mainImage}" alt="${item.title}" width="370" height="256"/>
                 <div class="thumbnail-corporate-caption">
-                  <p class="thumbnail-corporate-title"><a href="portfolio-details.html?id=${item.portfolioItemID}">${item.title}</a></p>
+                  <p class="thumbnail-corporate-title"><a href="portafolio_detalle.html?id=${item.portfolioItemID}">${item.title}</a></p>
                   <p>${item.description}</p>
-                  <a class="thumbnail-corporate-link" href="portfolio-details.html?id=${item.portfolioItemID}">
+                  <a class="thumbnail-corporate-link" href="portafolio_detalle.html?id=${item.portfolioItemID}">
                     <span class="icon mdi mdi-magnify"></span>
                     <span class="icon mdi mdi-magnify"></span>
                   </a>

@@ -41,6 +41,11 @@ const ProductSchema = {
         allowNull: true,
         type: DataTypes.DECIMAL,
         field: 'price'
+    },
+    foto: {
+        type: DataTypes.STRING,
+        field: 'main_image',
+        comment: 'Path to the main image file'
     }
 }
 Product.associate = models =>{
